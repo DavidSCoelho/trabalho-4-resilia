@@ -1,0 +1,25 @@
+create database curso_resilia;
+
+use curso_resilia;
+
+create table alunos(
+matricula int primary key,
+nome varchar(50),
+endereco varchar(99),
+telefone int,
+email varchar(50),
+rg varchar(15));
+
+create table turmas(
+id int primary key,
+cap_alunos int,
+turno varchar(10),
+professores varchar(50),
+sala int);
+
+create table cursos(
+id int primary key,
+nome varchar(50),
+tipo varchar(50),
+descricao varchar(150),
+carga_horaria int);
